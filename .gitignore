@@ -1,0 +1,5 @@
+/wp-config.php
+/wp-content
+!/wp-content/themes/fmr
+!/wp-content/plugins
+*.bak
