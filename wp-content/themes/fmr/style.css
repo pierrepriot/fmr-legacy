@@ -1,0 +1,276 @@
+/**
+ * Shared styles
+ *
+ * @author		Julie Tétard <julie@2jstudio.com>
+ * @version		1.0
+ * @package 	2j studio
+ * @subpackage	
+ * @category	css
+ */
+
+
+/* ----------------------------------------
+	CSS RESET
+   ---------------------------------------- */
+
+	/* Fonts
+	--------------------------------------- */
+	body, pre, blockquote, p, td { font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 10px;line-height:17px; }	
+	h1, h2, h3, h4, h5, h6, ul { font-size:100%;font-weight:normal;margin:0;padding:0; } 
+	address, caption, cite, code, dfn, em, strong, th, var { font-style:normal;font-weight:normal; }
+	strong { font-weight:bold; }
+	em { font-style:italic; }
+	
+	/* Margins
+	--------------------------------------- */
+	body { margin:0;padding:0; }
+	pre, blockquote, p, td, form, fieldset, legend { margin:0;padding:0; }
+	
+	/* Border
+	--------------------------------------- */
+	fieldset, img { border:0; }
+		
+	/* html
+	--------------------------------------- */
+	html { height:100%;width:100%; }
+	body { height:100%; }
+	
+	/* Lists
+	--------------------------------------- */
+	ol, ul { list-style:none; }
+	
+	/* Tables
+	--------------------------------------- */
+	table { clear:both;border-collapse:collapse;border-spacing:0; }
+	caption, th { text-align:left; }
+	
+	/* Links
+	--------------------------------------- */
+	a { text-decoration:none;font-weight:bold; color: #000000;}
+	a:hover { text-decoration:underline;}
+	a:visited {color: #000000;}
+	
+	/* Image
+	--------------------------------------- */
+	img { color:#000; }
+	
+	/* Divers
+	--------------------------------------- */
+	q:before, q:after { content:''; }
+
+
+/* ----------------------------------------
+	DEFAUT WORDPRESS
+   ---------------------------------------- */
+/*Using 'class="alignright"' on an image will (who would've
+thought?!) align the image to the right. And using 'class="centered',
+will of course center the image. This is much better than using
+align="center", being much more futureproof (and valid) */
+
+img.centered {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img.alignright {
+padding: 4px;
+margin: 0 0 2px 7px;
+display: inline;
+}
+
+img.alignleft {
+padding: 4px;
+margin: 0 7px 2px 0;
+display: inline;
+}
+
+.alignright {
+float: right;
+}
+
+.alignleft {
+float: left
+}
+/* End Images */
+	
+/* ----------------------------------------
+	GENERIQUES
+   ---------------------------------------- */
+
+	.hidden { display:none; }
+	.show {	display:block; }
+	.invisible { visibility:hidden;	}
+	.br { height:0;clear:both;float:none;line-height:0;	}
+	.aC { text-align:center; }
+	.aR { text-align:right; }
+	.left { clear:none;float:left; }
+	.clear { clear:both;}
+	
+	
+	
+/* ----------------------------------------
+	LAYOUT
+   ---------------------------------------- */
+
+	/* Global
+	--------------------------------------- */
+	html { background-color:white; }
+	
+	/* Header
+	--------------------------------------- */
+	#header { margin : 0 auto 0 auto ; width: 944px ; height: 314px ;height: 254px ;}
+	
+	#menu {height: 18px ;background-color: #fe7b1c ;text-align:center;padding: 10px;}
+	#menu li { letter-spacing: 3px; color: white; display:inline;}
+	a.aheader {font-style: normal; font-weight: normal; color: #ffffff; }
+	
+	#logo {margin:15px;}
+	
+	#radio {margin:19px 19px 0px 0px;border:solid;border-size:1px;border-width: thin;}
+	
+	.social {padding-right: 23px;}
+	
+	/* Main
+	--------------------------------------- */
+	#main { margin : 0 auto 0 auto ; width: 944px ;}
+	hr {border:none;border-bottom-style: dotted; margin-top: 5px;border-width:2px;margin-bottom: 10px;}
+	
+	/* Titles
+	--------------------------------------- */
+	h1 {font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: bold;}
+	h2 {font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold;}
+	h3 {font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold;}	
+	
+	/* Left content
+	--------------------------------------- */
+	#leftcontent {text-align: justify; width:440px; float:left;padding:20px;}
+	#fullcontent { padding:20px;}
+	
+	/* Sidebar
+	--------------------------------------- */
+	#rightsidebar {padding:20px;width:420px;float:right;}
+	.menuTop {vertical-align: bottom;float:right;}
+	.sidebarHeader {height: 25px;border-bottom-style: dotted;margin-bottom: 7px;}
+	.sidebarTitle {float:left;}
+	.sidebarMenu {float:right;}
+	.coloredBlock {background-color: #ede9e9;padding: 5px;}
+	
+	/* Footer
+	--------------------------------------- */
+	#footer {letter-spacing: 2px;margin : 0 auto 0 auto ; width: 944px ; height: 28px ;background-color: #fe7b1c ;padding-top: 11px;}
+	#footer p {padding-left:15px;}
+	a.afooter {font-style: normal; font-weight: normal; color: #ffffff; }
+	
+	
+/* ----------------------------------------
+	PAGE ACTUALITES
+   ---------------------------------------- */
+		
+	/* Actu
+	--------------------------------------- */
+	#actuHeader {height: 25px;border-bottom-style: dotted;}
+	#actuTitle {float:left;}
+	#actuMenuTop {float:right;}
+	#actuMenuTop li { display:inline; font-weight: bold; vertical-align: bottom;}
+	h3.newsTitle {color:#fe7b1c;padding: 10px 10px 10px 0;}
+	h3.newsTitle:hover {text-decoration: underline;}
+	#actuMenuBottom {float:right;}
+	.newsLink {float:right; }
+	.extend {display: none;}
+	
+	/* Recherche */
+	.year {padding-left: 5px;}
+	.yearDiv {padding-left: 10px;display: none;}
+	#searchform {background-color: #ede9e9;padding: 3px 10px 10px 10px;}
+	#s {width:350px;font-size:10px;border:0;height:19px;}
+	#searchsubmit{background-color: #fe7b1c ;border:0;font-weight:bold;font-size:11px;height:21px;vertical-align:top;}
+	
+	/* Album
+	--------------------------------------- */
+	#cdSquare {background-color: #ede9e9;padding: 5px;}
+	#cdPix {margin : 5px;width:140px;height:140px;float:left;}
+	#cdText {float:right;margin : 5px;width:250px;}
+	
+		
+/* ----------------------------------------
+	PAGE FMR
+   ---------------------------------------- */
+   #fmrTop {font-weight: bold; float:right;} 
+   
+/* ----------------------------------------
+	PAGES GALERIES
+   ---------------------------------------- */  
+   #galTitle {color:#fe7b1c;float:right;}
+   .thumbImg {float: left;}
+   .thumbText {float:right; width: 180px;}
+   .thumbTitle {font-weight: bold;}
+   #thumbs ul.thumbs li {padding:0 28px 28px 0;
+   font-family: Arial;}
+
+   
+/* ----------------------------------------
+	PAGES PROGRAMMES
+   ---------------------------------------- */
+	#progHeader {height: 37px;border-bottom-style: dotted;}
+	#submenu {height: 18px ;padding: 1px;}
+	#submenu li { letter-spacing: 2px; display:inline;}
+	#submenuProg {height: 30px ;padding: 10px 5px 5px 5px; font-size: 14px; font-weight: bold;}
+	#submenuProg li { display:inline;margin-right: 18px;text-decoration: none;}
+	#submenuProg li a {text-decoration: none;}
+    .submenuProgImg {vertical-align: middle;}
+    .prog13 {color: #fe7b1c;}
+    .prog15 {color: #be9475;}
+    .prog14 {color: #d1d0d0;}
+    .progType {font-size: 10px;}
+    .progLeft {float: left;width:440px;padding:5px;margin-bottom: 25px;}
+    .progRight {float: right;width:440px;padding:5px;margin-bottom: 25px;}
+    .dayTitle {color:#fe7b1c;font-size: 17px;font-weight: bold;}
+    .hourTitle {color:#fe7b1c;font-size: 13px;font-weight: bold;}
+    .progTitle {font-size: 14px;font-weight: bold; }
+    .progLogo {vertical-align: middle;margin-bottom: 1px;}
+    .emImg {float: left;margin: 20px 30px 30px 0px;}
+    .progText {line-height: 10px;margin : 20px 40px 0px 0px;}
+    #progMainTitle {color: #fe7b1c;}
+    #styleTitle {font-size: 12px;}
+   
+/* ----------------------------------------
+	PAGE GRILLE
+   ---------------------------------------- */
+	#col0 {width: 36px;float:left;margin-right: 4px;font-weight: bold;color: #fe7b1c;}
+	#col1, #col2, #col3, #col4, #col5, #col6 {width: 119px;float:left;margin-right: 4px;word-wrap:break-word;line-height: 14px;}
+	#col7 {width: 119px;float:left;}
+	.bckg13, .bckg15, .bckg14, .bckg119 {padding: 4px;border-bottom-style: dashed;border-width: thin;}
+    .bckg13 {background-color: #fe7b1c;}
+    .bckg15 {background-color: #be9475;}
+    .bckg14 {background-color: #d1d0d0; }
+    .bckg119 {background-image: url('https://radio-fmr.net/param/pix/shared/boosterbackg.png'); }
+	.gridDay {font-weight: bold;}
+	.gridTitle {font-size: 13px;}
+    .demiBlockLeft {width:40%;float:left;}
+    .demiBlockRight {width:40%;float:right;}
+    .tripleBlockLeft {width:25%;float:left;}
+    .tripleBlockMid {width:25%;float:left;margin-left: 4px;}
+    .tripleBlockRight {width:25%;float:right;}
+	.demiGridTitle {font-size: 10px;line-height: 10px;}
+	.tripleGridTitle {font-size: 10px;line-height: 9px;}
+   
+/* ----------------------------------------
+	PAGE PLAYLIST
+   ---------------------------------------- */
+	#playlistTab {width:100%;border:solid 1px;}
+	#playlistTab th {background-color: black;color:white;}
+	#playlistTab td {margin:3px;padding:3px;text-align:left;}
+	#playlistTab tr.playLine1 {background-color:#BBBBBB;}
+	#playlistTab tr.playLine2 {background-color:#DDDDDD;}
+	#playlistTab td.playCell1,th.playCell1 {font-weight: bold;text-align: center;}
+	#playlistTab td.playCell2 {font-weight: bold;}
+
+/* ----------------------------------------
+	CONTENUS COMMUNS
+   ---------------------------------------- */
+
+	/* Commentaires
+	--------------------------------------- */
+	#comment { width: 400px; }
+	
